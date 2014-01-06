@@ -8,12 +8,8 @@
 </head>
 <body>
 
-	<h1>Home Page</h1>
-
-	<form method="POST">
-		<p>Say ur wish... <input type="text" name="wishText" value="" /></p> 
-		<input type="submit" value="GO" />
-	</form>
+	<h1>Wish Page</h1>
+	<p> You wished ...<b>${wishText}</b></p>
 
 </body>
 </html>
