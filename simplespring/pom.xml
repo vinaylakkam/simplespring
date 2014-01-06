@@ -17,7 +17,7 @@
 		<!-- Spring -->
 		<!-- <spring-framework.version>3.2.4.RELEASE</spring-framework.version> -->
 		<spring-framework.version>4.0.0.RELEASE</spring-framework.version>
-
+		<spring-security.version>3.2.0.RELEASE</spring-security.version>
 		<!-- Java EE / Java SE dependencies -->
 		<jsp.version>2.2</jsp.version>
 		<jstl.version>1.2</jstl.version>
@@ -90,13 +90,26 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-	<!-- used by Spring MVC Test framework -->
+		<!-- used by Spring MVC Test framework -->
 		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-library</artifactId>
 			<version>${hamcrest.version}</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!--  Spring security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring-security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring-security.version}</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>simplespring</finalName>
@@ -140,7 +153,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
-					<warName>petclinic</warName>
+					<warName>simplespring</warName>
 				</configuration>
 			</plugin>
 			<plugin>
