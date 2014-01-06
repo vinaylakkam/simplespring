@@ -25,9 +25,16 @@ application url: **http://localhost:9966/simplespring/**
 alternatively, you can build the war and deploy onto external tomcat server.
 
 
+##Security##
+
+application is secured with spring security 3.2.0.RELEASE
+
+credentials to use on login page: `admin/admin`
+
+Ref: http://docs.spring.io/spring-security/site/docs/3.2.0.RELEASE/reference/htmlsingle
 
 
 -----------------------
 
-mail your queries at <a href="mailto:vinay.lakkam@gmail.com">vinay.lakkam@gmail.com</a>
+<a href="mailto:vinay.lakkam@gmail.com">vinay.lakkam@gmail.com</a>
 
